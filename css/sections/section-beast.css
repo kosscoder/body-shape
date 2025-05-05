@@ -1,0 +1,42 @@
+.section-beast {
+	height: 750px;
+
+	display: flex;
+	align-items: center;
+
+	background-image: image-set(
+		/* Делаем для экранов с разной плотностью пикселей. 2x для retina */
+		url('../../img/beast/beast-bg.jpg') 1x,
+		url('../../img/beast/beast-bg@2x.jpg') 2x
+	);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+
+	/* clip path делает скошенные углы */
+	--angle: 7%;
+	clip-path: polygon(0% var(--angle), 100% 0%, 100% calc(100% - var(--angle)), 0% 100%);
+}
+
+.section-beast__title {
+	margin-bottom: 10px;
+
+	font-family: var(--font-accent);
+	font-size: clamp(2.625rem, 1.875rem + 3.75vw, 4.688rem);
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	color: var(--col-white);
+}
+
+.section-beast__desc {
+	margin-bottom: 30px;
+
+	font-size: clamp(0.875rem, 0.693rem + 0.91vw, 1.375rem);
+	font-weight: 300;
+	line-height: 150%;
+}
+
+.section-beast__btn-wrapper {
+
+}

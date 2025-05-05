@@ -1,0 +1,21 @@
+/* Fonts */
+@import url(../fonts/bebasneue/bebasneue.css);
+@import url(../fonts/roboto/roboto.css);
+
+/* Base */
+@import url(./base/reset.css);
+@import url(./base/base.css);
+
+/* Sections */
+@import url(./sections/hero.css);
+@import url(./sections/section-trainers.css);
+@import url(./sections/section-beast.css);
+@import url(./sections/section-groups.css);
+@import url(./sections/section-contacts.css);
+@import url(./sections/footer.css);
+
+/* Media */
+@import url(./media/1200px.css);
+@import url(./media/800px.css);
+@import url(./media/600px.css);
+@import url(./media/380px.css);

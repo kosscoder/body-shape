@@ -1,0 +1,23 @@
+.footer {
+	padding: 70px 0;
+}
+
+.footer__socials {
+	margin-bottom: 30px;
+
+	display: flex;
+	gap: 50px;
+	align-items: center;
+}
+
+.footer__contacts {
+	display: flex;
+	gap: 50px;
+
+	font-size: 14px;
+	line-height: 2;
+}
+
+.footer a:hover {
+	color: var(--col-yellow);
+}

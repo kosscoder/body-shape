@@ -1,0 +1,66 @@
+@media (max-width: 800px) {
+
+	/* ----- header ----- */
+
+	.row__logo {
+		display: none;
+	}
+
+	.hero__row {
+		justify-content: center;
+	}
+
+	.row__menu {
+		gap: 30px;
+	}
+
+	.hero__logo {
+		justify-content: center;
+	}
+
+	/* ----- section trainers ----- */
+
+	.section-trainers {
+		padding: 100px 0;
+	}
+
+	.section-trainers__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.grid__card-name {
+		font-size: 32px;
+	}
+
+	/* ----- section beast ----- */
+	.section-beast__btn-wrapper-item {
+		letter-spacing: 0.16em;
+	}
+
+	/* ----- section groups ----- */
+
+	.section-groups__grid-groups {
+		gap: 60px 32px;
+	}
+
+	.grid-groups__card-title {
+		font-size: 26px;
+	}
+
+	/* contacts */
+
+	.contacts {
+		padding: 90px 0;
+		height: auto;
+
+		background-image: 
+			linear-gradient(
+				rgba(0,0,0, 0.3),
+				rgba(0,0,0, 0.3)
+			),
+			image-set(
+				url('../../img/contacts/contact-form-bg.jpg') 1x,
+				url('../../img/contacts/contact-form-bg@2x.jpg') 2x
+			);
+	}
+}

@@ -1,0 +1,14 @@
+@media (max-width: 1200px) {
+
+	/* ----- section groups ----- */
+
+	.section-groups__grid-groups {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 80px 32px;
+	}
+
+	.grid-groups__card-title {
+		font-size: 36px;
+	}
+	
+}

@@ -1,0 +1,68 @@
+:root {
+	--col-yellow: #FFD479;
+	--col-white: #ffffff;
+	--font-base: 'Roboto', sans-serif;
+	--font-accent: 'Bebas Neue', sans-serif;
+}
+
+body {
+	background-color: #1F2A32;
+	color: #FAFAF5;
+
+	font-family: var(--font-base);
+	font-weight: 300;
+	/* font-family: 'Bebas Neue', sans-serif; */
+}
+
+a {
+	color: var(--color-white);
+}
+
+.title {
+	font-family: var(--font-accent);
+	color: var(--col-yellow);
+	font-weight: 700;
+	/* Clamp функция для изминения шрифта при адаптивке (с 96px по 48px) */
+	font-size: clamp(3rem, 1.909rem + 5.45vw, 6rem);
+	/* Межбуквенный интервал будет привязан к fontSize при адаптивке */
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.subtitle {
+	font-size: 16px;
+	line-height: 2;
+	font-weight: 300;
+	color: #FAFAF5;
+}
+
+.btn {
+	display: inline-block;
+	padding: 18px clamp(0.875rem, 0.693rem + 0.91vw, 1.375rem) 15px;
+
+	border-radius: 7px;
+	background-color: var(--col-yellow);
+
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 1;
+	/* line-height: 52px; */
+	letter-spacing: 0.26em;
+	color: #000000;
+
+	transition: background-color 0.2s easy-in;
+}
+
+.btn:hover,
+.btn:active {
+	background-color: #fcc54e;
+}
+
+.container {
+	/* Максимальная ширина 1170, растягивается на 100% */
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}

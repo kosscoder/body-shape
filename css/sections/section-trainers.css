@@ -1,0 +1,72 @@
+.section-trainers {
+	padding: 150px 0;
+}
+
+.section-trainers__header {
+	margin: 0 auto;
+	margin-bottom: 50px;
+
+	max-width: 800px;
+	width: 100%;
+
+	text-align: center;
+}
+
+.section-trainers__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 35px 30px;
+}
+
+.grid__card {
+	display: block;
+	position: relative;
+
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+	max-width: 268px;
+}
+
+.grid__card::before {
+	content: '';
+	opacity: 0;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+
+	transition: all .2s ease-in;
+}
+
+.grid__card-name {
+	/* с свойством opacity мы можем плавно показывать элемент (с display: none не работает)  */
+	opacity: 0;
+
+	font-size: 42px;
+	font-weight: 700;
+	font-family: var(--font-accent);
+	text-transform: uppercase;
+	text-align: center;
+
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	transition: all .2s ease-in;
+}
+
+.grid__card:hover .grid__card-name {
+	opacity: 1;
+	top: 50%;
+}
+
+.grid__card:hover::before {
+	opacity: 1;
+}

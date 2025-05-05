@@ -1,0 +1,74 @@
+.contacts {
+	height: 860px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-image: image-set(
+		/* Делаем для экранов с разной плотностью пикселей. 2x для retina */
+		url('../../img/contacts/contact-form-bg.jpg') 1x,
+		url('../../img/contacts/contact-form-bg@2x.jpg') 2x
+	);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contacts__content {
+	max-width: 630px;
+}
+
+.contacts__content-title {
+	font-size: clamp(2.5rem, 1.818rem + 3.41vw, 4.375rem);
+	letter-spacing: 0.06em;
+
+	margin-bottom: 40px;
+}
+
+.form {
+	display: grid;
+	gap: 30px;
+}
+
+.form__group {
+
+}
+
+.form__group-label {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--col-white);
+}
+
+.form__group-input {
+	display: block;
+	width: 100%;
+	padding: 5px 0 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	font-weight: 200;
+}
+
+.form__group-textarea {
+	/* Размер можно менять только по вертикале	 */
+	resize: vertical;
+
+	display: block;
+	width: 100%;
+	height: 157px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	padding: 5px 0 10px;
+
+	line-height: 1.5;
+	font-weight: 200;
+}
+
+.form__group-textarea:focus {
+	outline: none;
+}
+
+.form__btn {
+	justify-self: start;
+}

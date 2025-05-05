@@ -1,0 +1,47 @@
+.hero {
+	height: 750px;
+	padding-top: 30px;
+
+	background-image: image-set(
+		/* Делаем для экранов с разной плотностью пикселей. 2x для retina */
+		url('../../img/hero/hero-bg.jpg') 1x,
+		url('../../img/hero/hero-bg@2x.jpg') 2x
+	);
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.hero__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.row__menu {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.row__menu-item {
+	font-family: var(--font-accent);
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all .3s ease-in;
+}
+
+.row__menu-item:hover {
+	color: var(--col-yellow);
+	position: relative;
+	bottom: 1px;
+}
+
+.hero__logo {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 125px;
+}

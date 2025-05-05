@@ -1,0 +1,87 @@
+@media (max-width: 600px) {
+
+	/* ----- header ----- */
+	.hero {
+		height: auto;
+		padding-bottom: 60px;
+	}
+
+	.row__logo {
+		display: block;
+	}
+
+	.hero__row {
+		flex-direction: column;
+		row-gap: 40px;
+	}
+
+	.row__menu {
+		flex-direction: column;
+		row-gap: 30px;	
+	}
+
+	.hero__logo {
+		display: none;
+	}
+
+	/* ----- section trainers ----- */
+
+	.section-trainers {
+		padding: 80px 0;
+	}
+
+	.section-trainers__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.section-trainers__header {
+		margin-bottom: 30px;
+	}
+
+	.section-trainers__header-subtitle {
+		font-size: 14px;
+	}
+
+	.grid__card {
+		border-radius: 10px;
+	}
+
+	/* ----- section beast ----- */
+	.section-beast {
+		height: auto;
+		padding: 100px 0;
+	}
+
+	/* ----- section groups ----- */
+
+	.section-groups__grid-groups {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 60px 20px;
+	}
+
+	/* footer */
+	.footer {
+		padding: 50px 0;
+	}
+
+	.footer__socials {
+		gap: 30px;
+	}
+
+	.footer__contacts {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+}	 
+
+/* Убираем hover and transition на устройствах с тачем */
+@media (hover: none) and (pointer: coarse) {
+	.grid__card-name {
+		opacity: 1;
+		top: 50%;
+	}
+
+	.grid__card::before {
+		opacity: 1;
+	}
+}
