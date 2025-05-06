@@ -18,6 +18,11 @@
 	line-height: 2;
 }
 
+.socials__item-link > img {
+	width: 24px;
+	height: 24px;
+}
+
 .footer a:hover {
 	color: var(--col-yellow);
 }
